@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@300;400;500;600;700;900&display=swap');
+
+:root {
+    --alloc-primary-color: #239BD8;
+    --gray-400: #7C8DB0;
+    --gray-100: #A1A1A1;
+    --bg-card: #F6F9FF;
+    --gradient-color: linear-gradient(180deg, #1E9781 0%, #22C3A6 100%);
+    --font-family-montserrat: 'Montserrat', sans-serif;
+    --font-family-nunito: 'Nunito Sans';
+}
+
+body {
+    font-family: var(--font-family-nunito), var(--bs-font-sans-serif);
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2.625rem;
+        padding-right: 2.625rem;
+    }
+    .search-bar input {
+        width: 23.875rem;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .user-profile span {
+        display: none
+    }
+}
+
+
+
+
+/* utils */
+.bg-primary-alloc {
+    background-color: var(--alloc-primary-color);
+}
+
+.primary-color-alloc {
+    color: var(--alloc-primary-color);
+}
+
+.grey-400 {
+    color: var(--gray-400);
+}
+
+.bg-card {
+    background-color: var(--bg-card);
+}
+
+.fs-36px {
+    font-size: 2.25rem;
+}
+
+
+
+
+
+.navbar-brand, footer {
+    font-family: var(--font-family-montserrat);
+}
+
+.search-bar input::placeholder {
+    color: white;
+}
+
+.payment-completed-line {
+    height: 0.1875rem;
+    background-color: var(--alloc-primary-color);
+}
+
+.recom-card {
+    min-width: 23.4375rem;
+    max-width: 37.5rem;
+    min-height: 50.5rem;
+    box-shadow: 0px 12px 24px 2px rgba(185, 185, 185, 0.05), 0px 24px 60px 0px rgba(106, 106, 106, 0.05), 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.recom-card h4 {
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    color: var(--gray-100);
+    margin-top: 23rem;
+}
